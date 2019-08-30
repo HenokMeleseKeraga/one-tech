@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>One Tech</title>
+</head>
+<body>
+<aside class="menu-sidebar d-none d-lg-block" th:fragment="menu-sidebar">
+    <div class="logo">
+        <a th:href="@{/seller}">
+            <img th:src="@{/images/img_lights.jpg}" alt="One Tech"/>
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+
+                <li>
+                    <a th:href="@{/seller}" role="button">
+                        <i class="fas fa-table"></i>Product</a>
+                </li>
+                <li class="active">
+                    <a th:href="@{/allOrderItem}" role="button">
+                        <i class="far fa-check-square"></i>Order Item</a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+</body>
+</html>
